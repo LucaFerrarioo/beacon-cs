@@ -1,0 +1,19 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 98vh;
+}
+
+#typed{
+    display: flex;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 5em;
+    margin: auto;
+    height: 92.5vh;
+    align-items: center;
+    justify-content: center;
+}
