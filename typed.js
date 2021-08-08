@@ -1,4 +1,4 @@
 var typed = new Typed('#typed', {
-    strings: ["Coming soon!", "Second sentence."],
+    strings: ["Welcome to Beacontech", "Coming Soon!"],
     typeSpeed: 100
 });
