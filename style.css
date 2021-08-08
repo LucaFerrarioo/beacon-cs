@@ -7,8 +7,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: black;
-    height: 95vh;
-    width: 95vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -19,8 +18,8 @@ body{
     font-weight: 700;
     font-size: 5em;
     margin: auto;
-    height: 80vh;
-    width: 75vw;
+    height: 70vh;
+    width: 70vw;
     align-items: center;
     justify-content: center;
     letter-spacing: 5px;
