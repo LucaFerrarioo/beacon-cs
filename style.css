@@ -130,6 +130,13 @@ body, body * {
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
-  padding-bottom: 2.5%;
+  padding-bottom: 1.5%;
+}
+
+.page2 {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */
