@@ -14,6 +14,16 @@ body{
     }
 }
 
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
 
 
 //#################----- PAGE 1 -----#######################
@@ -112,4 +122,26 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.typed-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#typed{
+    font-size: 5em;
+    letter-spacing: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.typed-cursor{
+    display: none;
 }
