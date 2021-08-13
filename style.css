@@ -113,6 +113,13 @@ html {
   font-size: 100px;
   letter-spacing: 25px;
   font-weight: 400;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.content h1:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .down {
@@ -130,6 +137,13 @@ html {
   width: 100vw;
   padding-bottom: 1.5%;
   bottom: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.down:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .page2 {
@@ -160,6 +174,13 @@ html {
       -ms-flex-align: center;
           align-items: center;
   z-index: 100000;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.up:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .typed-container {
@@ -192,6 +213,14 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #440044;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#typed:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  color: black;
 }
 
 .typed-cursor {
@@ -276,8 +305,8 @@ span {
   transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 
-.hover-this:hover ~ .cursor {
-  -webkit-transform: translate(-50%, -50%) scale(5);
-          transform: translate(-50%, -50%) scale(5);
+.hover-this:hover {
+  -webkit-transform: translateY(-15%) scale(2);
+          transform: translateY(-15%) scale(2);
 }
 /*# sourceMappingURL=style.css.map */

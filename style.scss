@@ -95,6 +95,12 @@ html {
     font-size: 100px;
     letter-spacing: 25px;
     font-weight: 400;
+    transition: all 0.5s ease;
+}
+
+.content h1:hover{
+
+    transform: scale(1.5);
 }
 
 .down{
@@ -106,6 +112,11 @@ html {
     width: 100vw;
     padding-bottom: 1.5%;
     bottom: 0;
+    transition: all 0.5s ease;
+}
+
+.down:hover{
+    transform: scale(1.5);
 }
 
 
@@ -133,6 +144,11 @@ html {
     position: absolute;
     align-items: center;
     z-index: 100000;
+    transition: all 0.5s ease;
+}
+
+.up:hover{
+    transform: scale(1.5);
 }
 
 .typed-container{
@@ -151,6 +167,12 @@ html {
     display: flex;
     flex-direction: column;
     color: rgb(68, 0, 68);
+    transition: all 0.5s ease;
+}
+
+#typed:hover{
+    transform: scale(1.25);
+    color: black;
 }
 
 .typed-cursor{
@@ -210,6 +232,6 @@ span{
     transition: transform 0.3s linear;
 }
 
-.hover-this:hover ~ .cursor{
-    transform: translate(-50%, -50%) scale(5);
+.hover-this:hover{
+    transform: translateY(-15%) scale(2);
 }
