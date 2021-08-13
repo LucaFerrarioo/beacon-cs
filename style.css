@@ -32,9 +32,13 @@ body {
   /* Firefox */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .cursor {
   position: fixed;
-  background: black;
+  background: purple;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -46,13 +50,14 @@ body {
           user-select: none;
   pointer-events: none;
   z-index: 10000;
+  mix-blend-mode: darken;
 }
 
 .shapes {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  background-color: #970097;
   overflow: hidden;
 }
 
@@ -110,25 +115,6 @@ body {
   font-weight: 400;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-}
-
 .down {
   margin: 0;
   position: absolute;
@@ -143,6 +129,7 @@ body {
           align-items: center;
   width: 100vw;
   padding-bottom: 1.5%;
+  bottom: 0;
 }
 
 .page2 {
@@ -154,18 +141,44 @@ body {
   width: 100vw;
 }
 
+.up {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  padding-top: 1.5%;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100000;
+}
+
 .typed-container {
   height: 100vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 #typed {
@@ -178,9 +191,93 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: #440044;
 }
 
 .typed-cursor {
   display: none;
+}
+
+.page3 {
+  height: 100vh;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.up2 {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  padding-top: 1.5%;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.hover-this {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+span {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 300;
+  color: #440044;
+  font-size: 5em;
+  pointer-events: none;
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+}
+
+.hover-this:hover ~ .cursor {
+  -webkit-transform: translate(-50%, -50%) scale(5);
+          transform: translate(-50%, -50%) scale(5);
 }
 /*# sourceMappingURL=style.css.map */

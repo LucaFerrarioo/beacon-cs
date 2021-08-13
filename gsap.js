@@ -5,7 +5,6 @@ document.body.addEventListener("mousemove", event => {
     gsap.set(".cursor", {
         x: mouseX,
         y: mouseY,
-        
     })
 
     gsap.to(".shape", {

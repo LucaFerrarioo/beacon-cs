@@ -24,14 +24,20 @@ body::-webkit-scrollbar {
     scrollbar-width: none;  /* Firefox */
   }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 
 //#################----- PAGE 1 -----#######################
 
 
+
+
 .cursor{
     position: fixed;
-    background: black;
+    background: purple;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -40,13 +46,15 @@ body::-webkit-scrollbar {
     user-select: none;
     pointer-events: none;
     z-index: 10000;
+
+    mix-blend-mode: darken;
 }
 
 .shapes{
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: rgb(151, 0, 151);
     overflow: hidden;
 
     .shape{
@@ -89,18 +97,6 @@ body::-webkit-scrollbar {
     font-weight: 400;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    justify-content: flex-end;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-}
-
 .down{
     margin: 0;
     position: absolute;
@@ -109,6 +105,7 @@ body::-webkit-scrollbar {
     align-items: center;
     width: 100vw;
     padding-bottom: 1.5%;
+    bottom: 0;
 }
 
 
@@ -126,13 +123,26 @@ body::-webkit-scrollbar {
     width: 100vw;
 }
 
+.up{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    padding-top: 1.5%;
+    position: absolute;
+    align-items: center;
+    z-index: 100000;
+}
 
 .typed-container{
     height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 #typed{
@@ -140,8 +150,66 @@ body::-webkit-scrollbar {
     letter-spacing: 10px;
     display: flex;
     flex-direction: column;
+    color: rgb(68, 0, 68);
 }
 
 .typed-cursor{
     display: none;
+}
+
+
+
+//#################----- PAGE 3 -----#######################
+
+.page3{
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.up2{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    padding-top: 1.5%;
+    position: absolute;
+    align-items: center;
+}
+
+.wrapper{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hover-this{
+    transition: all 0.3s ease;
+}
+
+span{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(68, 0, 68);
+    font-size: 5em;
+    pointer-events: none;
+    transition: transform 0.3s linear;
+}
+
+.hover-this:hover ~ .cursor{
+    transform: translate(-50%, -50%) scale(5);
 }

@@ -24,31 +24,48 @@
 
 <body>
 
-    <div class="page1">
-        <div class="cursor"></div>
+    <div class="cursor"></div>
 
+    <div class="page1" id="page1">
         <div class="shapes">
             <div class="shape shape-1"></div>
             <div class="shape shape-2"></div>
             <div class="shape shape-3"></div>
         </div>
-    
         <div class="content">
             <h1>BEACONTECH</h1>
         </div>
-    
-        <div class="container">
-            <div class="down">
-                <a href="#page2"><img src="chevron-down-solid.svg" alt="down arrow" width="30px"></a>
-            </div>
+
+        <div class="down">
+            <a href="#page2"><img src="chevron-down-solid.svg" alt="down arrow" width="30px"></a>
         </div>
     </div>
 
     <div class="page2" id="page2">
-        <div class="typed-container">
-            <div id="typed"></div>
-        </div>
 
+        <div class="typed-container">
+            <div class="up">
+                <a href="#page1"><img src="chevron-up-solid.svg" alt="up arrow" width="30px"></a>
+            </div>
+            <div id="typed"></div>
+            <div class="down">
+                <a href="#page3"><img src="chevron-down-solid.svg" alt="down arrow" width="30px"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="page3" id="page3">
+        <div class="up">
+            <a href="#page2"><img src="chevron-up-solid.svg" alt="up arrow" width="30px"></a>
+        </div>
+        <div class="wrapper">
+            <nav>
+                <a href="" class="hover-this"><span>about us</span></a>
+                <a href="" class="hover-this"><span>contacts</span></a>
+                <a href="" class="hover-this"><span>follow us</span></a>
+            </nav>
+
+        </div>
     </div>
 
     <script src="typed.js"></script>
