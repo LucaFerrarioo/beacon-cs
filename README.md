@@ -4,3 +4,4 @@
 
 BeaconTech Landing Page.
 Mainly created to improve JS skills and discover new properties and libraries.
+
