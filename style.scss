@@ -8,6 +8,7 @@ body{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    scrollbar-width: none;
 
     &, *{
         cursor: none;
@@ -19,11 +20,10 @@ body::-webkit-scrollbar {
   }
   
   /* Hide scrollbar for IE, Edge and Firefox */
-  body {
+body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    
-  }
+}
 
 html {
     scroll-behavior: smooth;
