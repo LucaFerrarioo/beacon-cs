@@ -97,6 +97,7 @@ html {
     letter-spacing: 25px;
     font-weight: 500;
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
 }
 
 .content h1:hover{
@@ -114,6 +115,7 @@ html {
     padding-bottom: 1.5%;
     bottom: 0;
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
 }
 
 .down:hover{
@@ -146,6 +148,7 @@ html {
     align-items: center;
     z-index: 100000;
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
 }
 
 .up:hover{
@@ -170,6 +173,7 @@ html {
     flex-direction: column;
     color: rgb(68, 0, 68);
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
     margin: 15%;
     text-align: center;
 }
@@ -227,6 +231,7 @@ nav{
 
 .hover-this{
     transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
 }
 
 span{
@@ -266,6 +271,7 @@ span{
         flex-direction: column;
         color: rgb(68, 0, 68);
         transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
         margin: 15%;
         text-align: center;
     }

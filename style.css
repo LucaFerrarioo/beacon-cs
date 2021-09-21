@@ -113,8 +113,8 @@ html {
   font-size: 100px;
   letter-spacing: 25px;
   font-weight: 500;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
 }
 
 .content h1:hover {
@@ -137,8 +137,8 @@ html {
   width: 100vw;
   padding-bottom: 1.5%;
   bottom: 0;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
 }
 
 .down:hover {
@@ -174,8 +174,8 @@ html {
       -ms-flex-align: center;
           align-items: center;
   z-index: 100000;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
 }
 
 .up:hover {
@@ -214,8 +214,8 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #440044;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
   margin: 15%;
   text-align: center;
 }
@@ -296,8 +296,8 @@ nav {
 }
 
 .hover-this {
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
 }
 
 span {
@@ -344,8 +344,8 @@ span {
         -ms-flex-direction: column;
             flex-direction: column;
     color: #440044;
-    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
     margin: 15%;
     text-align: center;
   }
