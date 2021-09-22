@@ -51,7 +51,6 @@ html {
           user-select: none;
   pointer-events: none;
   z-index: 10000;
-  mix-blend-mode: darken;
 }
 
 .shapes {
@@ -154,6 +153,7 @@ html {
           box-sizing: border-box;
   height: 100vh;
   width: 100vw;
+  background: black;
 }
 
 .up {
@@ -214,7 +214,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #440044;
+  color: white;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   margin: 15%;
@@ -225,11 +225,12 @@ html {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
   overflow-wrap: normal;
-  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09, 0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09;
 }
 
 .typed-cursor {
