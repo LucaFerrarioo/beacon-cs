@@ -105,17 +105,21 @@ html {
     transform: scale(1.5);
 }
 
-.down{
+.down, .down-white{
     margin: 0;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    padding-bottom: 1.5%;
+    padding-bottom: 2.5%;
     bottom: 0;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
+}
+
+.down-white img{
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(173deg) brightness(102%) contrast(103%);
 }
 
 .down:hover{
@@ -137,18 +141,22 @@ html {
     background: black;
 }
 
-.up{
+.up, .up-white{
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     top: 0;
-    padding-top: 1.5%;
+    padding-top: 2.5%;
     position: absolute;
     align-items: center;
     z-index: 100000;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
+}
+
+.up-white img{
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(173deg) brightness(102%) contrast(103%);
 }
 
 .up:hover{
