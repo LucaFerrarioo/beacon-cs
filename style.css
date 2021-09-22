@@ -328,28 +328,9 @@ span {
   #typed:hover {
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
-    overflow-wrap: normal;
-    color: black;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
   }
   #typed {
-    font-size: 5em;
-    letter-spacing: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    color: #440044;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    margin: 15%;
-    text-align: center;
+    margin: 20%;
   }
   .hover-this:hover {
     -webkit-transform: scale(1.35);

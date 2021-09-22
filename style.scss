@@ -270,22 +270,10 @@ span{
 
     #typed:hover{
         transform: scale(1.15);
-        overflow-wrap: normal;
-        color: black;
-        display: flex;
-        text-align: center;
     }
 
     #typed{
-        font-size: 5em;
-        letter-spacing: 10px;
-        display: flex;
-        flex-direction: column;
-        color: rgb(68, 0, 68);
-        transition: all 0.5s ease;
-        -webkit-transition: all 0.5s ease;
-        margin: 15%;
-        text-align: center;
+        margin: 20%;
     }
 
     .hover-this:hover{
