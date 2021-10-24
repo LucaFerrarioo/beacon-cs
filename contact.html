@@ -10,7 +10,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <!-- <link rel="shortcut icon" href="LogoBeacon.png" type="image/x-icon"> -->
     <link
       rel="shortcut icon"
       href="logo_small_icon_only.png"
@@ -24,57 +23,70 @@
       rel="stylesheet"
     />
 
-    <title>BeaconTech | Home</title>
+    <title>Beacontech | Contacts</title>
   </head>
 
-  <body>
-    <div class="cursor"></div>
+  <body id="contact-body">
+    <div class="cursor-cont"></div>
 
-    <div class="page1" id="page1">
-      <div class="shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-      </div>
-      <div class="content">
-        <h1>BEACONTECH</h1>
-      </div>
+    <!-- <div class="cont-form">
+      <div class="left"></div>
 
-      <div class="down">
-        <a href="#page2"
-          ><img src="chevron-down-solid.svg" alt="down arrow" width="30px"
-        /></a>
+      <div class="right">
+        <form
+          action="https://formspree.io/f/xwkajrwa"
+          method="POST"
+          id="contact-form"
+        >
+          <label>
+            <input
+              type="email"
+              name="_replyto"
+              id="txtMail"
+              size="30"
+              placeholder="eMail"
+            /> </label
+          ><br />
+          <label>
+            <input
+              name="subject"
+              id="txtin"
+              size="30"
+              width="48"
+              height="48"
+              placeholder="Subject"
+            /> </label
+          ><br /><br />
+          <label>
+            <textarea
+              name="message"
+              rows="7"
+              cols="33"
+              placeholder="Message"
+            ></textarea></label
+          ><br />
+          <br /><button type="submit">Send</button>
+        </form>
       </div>
-    </div>
+    </div> -->
 
-    <div class="page2" id="page2">
-      <div class="typed-container">
-        <div class="up-white">
-          <a href="#page1"
-            ><img src="chevron-up-solid.svg" alt="up arrow" width="30px"
-          /></a>
+    <div class="form-container">
+      <div class="contact-box">
+        <div class="left"></div>
+        <div class="right">
+          <h2 id="h2cont">Contact Us</h2><br>
+          <form
+            action="https://formspree.io/f/xwkajrwa"
+            method="POST"
+            id="contact-form"
+          >
+            <input type="text" class="field" name="name" placeholder="Name" />
+            <input type="email" class="field" name="_replyto" placeholder="Email" />
+            <input type="text" class="field" name="subject" placeholder="Subject" />
+            <textarea placeholder="Message" class="field" name="message" id="txtArea"></textarea>
+            <button class="btnCont">Send</button>
+          </form>
         </div>
-        <div id="typed"></div>
-        <div class="down-white">
-          <a href="#page3"
-            ><img src="chevron-down-solid.svg" alt="down arrow" width="30px"
-          /></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="page3" id="page3">
-      <div class="up">
-        <a href="#page2"
-          ><img src="chevron-up-solid.svg" alt="up arrow" width="30px"
-        /></a>
-      </div>
-      <div class="wrapper">
-        <nav>
-          <a href="" class="hover-this"><span>about us</span></a>
-          <a href="contact.html" class="hover-this"><span>contacts</span></a>
-          <a href="" class="hover-this"><span>follow us</span></a>
-        </nav>
       </div>
     </div>
 
