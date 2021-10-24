@@ -417,9 +417,23 @@ span{
 }
 
 .left{
-	background: url(LogoBeacon.png) no-repeat center;
-	background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#logocont{
 	height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contImg{
+     width: 150%;
 }
 
 .right{
