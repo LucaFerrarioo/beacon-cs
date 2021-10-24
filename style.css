@@ -425,7 +425,7 @@ span {
 
 .cursor-cont {
   position: fixed;
-  background: #1200b1;
+  background: #2eaccc;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -558,7 +558,7 @@ span {
 }
 
 .btnCont:hover {
-  background-color: #2289a3;
+  background-color: #19687c;
 }
 
 .field:focus {

@@ -29,61 +29,36 @@
   <body id="contact-body">
     <div class="cursor-cont"></div>
 
-    <!-- <div class="cont-form">
-      <div class="left"></div>
-
-      <div class="right">
-        <form
-          action="https://formspree.io/f/xwkajrwa"
-          method="POST"
-          id="contact-form"
-        >
-          <label>
-            <input
-              type="email"
-              name="_replyto"
-              id="txtMail"
-              size="30"
-              placeholder="eMail"
-            /> </label
-          ><br />
-          <label>
-            <input
-              name="subject"
-              id="txtin"
-              size="30"
-              width="48"
-              height="48"
-              placeholder="Subject"
-            /> </label
-          ><br /><br />
-          <label>
-            <textarea
-              name="message"
-              rows="7"
-              cols="33"
-              placeholder="Message"
-            ></textarea></label
-          ><br />
-          <br /><button type="submit">Send</button>
-        </form>
-      </div>
-    </div> -->
-
     <div class="form-container">
       <div class="contact-box">
         <div class="left"></div>
         <div class="right">
-          <h2 id="h2cont">Contact Us</h2><br>
+          <h2 id="h2cont">Contact Us</h2>
+          <br />
           <form
             action="https://formspree.io/f/xwkajrwa"
             method="POST"
             id="contact-form"
           >
             <input type="text" class="field" name="name" placeholder="Name" />
-            <input type="email" class="field" name="_replyto" placeholder="Email" />
-            <input type="text" class="field" name="subject" placeholder="Subject" />
-            <textarea placeholder="Message" class="field" name="message" id="txtArea"></textarea>
+            <input
+              type="email"
+              class="field"
+              name="_replyto"
+              placeholder="Email"
+            />
+            <input
+              type="text"
+              class="field"
+              name="subject"
+              placeholder="Subject"
+            />
+            <textarea
+              placeholder="Message"
+              class="field"
+              name="message"
+              id="txtArea"
+            ></textarea>
             <button class="btnCont">Send</button>
           </form>
         </div>

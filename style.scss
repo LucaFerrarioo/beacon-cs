@@ -356,50 +356,17 @@ span{
 }
 
 
-//#################----- TESTING SECTION-----#######################
 
-// #contact-body{
-//     width: 100vw;
-//     height: 100vh;
-//     font-size: 25px;
-//     line-height: 40px;
-// }
 
-// .cont-form{
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-// }
 
-// .cont-form::after{
-//     position: absolute;
-//     content: '';
-//     left: 0;
-//     top: 0;
-//     width: 100%;
-//     height: 100%;
-//     background: url(LogoBeacon.png) no-repeat center;
-//     background-size: cover;
-//     z-index: -1;
-//     filter: blur(15px);
-// }
+//################################## CONTACT US #################################
 
-// #contact-form{
-//     text-align: center;
-//     padding: 5%;
-//     margin-right: 500px;
-// }
 
-// .right{
-//     display: grid;
-// }
+
 
 .cursor-cont{
     position: fixed;
-    background: rgb(18, 0, 177);
+    background: #2eaccc;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -409,14 +376,6 @@ span{
     pointer-events: none;
     z-index: 10000;
 }
-
-// #txtin{
-//     line-height: 2em;
-// }
-
-// #txtMail{
-//     line-height: 1.5em;
-// }
 
 #contact-body{
 	height: 100vh;
@@ -519,7 +478,7 @@ span{
 }
 
 .btnCont:hover{
-    background-color: #2289a3;
+    background-color: #19687c;
 }
 
 .field:focus{
