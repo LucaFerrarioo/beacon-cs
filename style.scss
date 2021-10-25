@@ -398,8 +398,10 @@ span{
 .left{
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    justify-content: center;
 }
 
 #logocont{
@@ -409,10 +411,16 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 850px;
 }
 
 #contImg{
      width: 100%;
+     transition: all 0.5s ease;
+}
+
+#contImg:hover{
+    transform: scale(1.2);
 }
 
 .right{
@@ -489,6 +497,16 @@ span{
 }
 
 .lft{
-    width: 50px;
-    margin-right: 10%;
+    width: 30px;
+    transition: all 0.5s ease;
+}
+
+.lft:hover{
+    transform: scale(1.5);
+}
+
+.acont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
