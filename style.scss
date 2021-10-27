@@ -440,8 +440,9 @@ span {
   border-radius: 7.5px;
   width: 75%;
   border: 2px solid rgba(0, 0, 0, 0);
+  text-align: center;
+  background: rgb(250, 250, 250);
   outline: none;
-  background-color: rgba(230, 230, 230, 0.6);
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
   margin-bottom: 22px;
@@ -460,7 +461,7 @@ span {
 
 .btnCont {
   border-radius: 10px;
-  width: 80%;
+  width: 79%;
   padding: 0.5rem 1rem;
   background-color: #2eaccc;
   color: #fff;
@@ -585,4 +586,20 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.lefto{
+  position: absolute;
+  justify-content: center;
+  margin-left: 5%;
+}
+
+#lftwhite{
+  font-size: 30px;
+  transition: all 0.5s ease;
+  color: whitesmoke;
+}
+
+#lftwhite:hover {
+  transform: scale(1.5);
 }
