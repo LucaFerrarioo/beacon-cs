@@ -646,6 +646,7 @@ span {
 }
 
 .textContent {
+  padding: 0 5%;
   text-align: center;
   color: whitesmoke;
 }
@@ -690,7 +691,7 @@ span {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #ffee10;
+  background: #ff10ff;
   -webkit-transition: .5s;
   transition: .5s;
   -webkit-transform: scale(0.9);
@@ -701,15 +702,15 @@ span {
 .lnk:hover::before {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-box-shadow: 0 0 15px #ffee10;
-          box-shadow: 0 0 15px #ffee10;
+  -webkit-box-shadow: 0 0 15px #ff10ff;
+          box-shadow: 0 0 15px #ff10ff;
 }
 
 .lnk:hover {
-  color: #ffee10;
-  -webkit-box-shadow: 0 0 5px #ffee10;
-          box-shadow: 0 0 5px #ffee10;
-  text-shadow: 0 0 5px #ffee10;
+  color: #ff10ff;
+  -webkit-box-shadow: 0 0 5px #ff10ff;
+          box-shadow: 0 0 5px #ff10ff;
+  text-shadow: 0 0 5px #ff10ff;
 }
 
 .maincont {
