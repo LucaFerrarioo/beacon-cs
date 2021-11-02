@@ -598,6 +598,7 @@ span {
 
 .lft {
   width: 30px;
+  height: 35px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -833,7 +834,32 @@ span {
 #sc2 {
   height: 100vh;
   width: 100vw;
-  background: black;
   position: relative;
+}
+
+.weird {
+  position: absolute;
+  right: 10px;
+  bottom: -75px;
+  z-index: 1000;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.weird:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  right: 45px;
+}
+
+.left-abt {
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  position: absolute;
+  padding-left: 175px;
 }
 /*# sourceMappingURL=style.css.map */

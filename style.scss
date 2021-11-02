@@ -484,6 +484,7 @@ span {
 
 .lft {
   width: 30px;
+  height: 35px;
   transition: all 0.5s ease;
 }
 
@@ -671,7 +672,27 @@ span {
 #sc2 {
   height: 100vh;
   width: 100vw;
-  background: black;
   position: relative;
 }
 
+.weird{
+  position: absolute;
+  right: 10px;
+  bottom: -75px;
+  z-index: 1000;
+  transition: all 0.5s ease;
+}
+
+.weird:hover{
+  transform: scale(1.2);
+  right: 45px;
+}
+
+.left-abt{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  position: absolute;
+  padding-left: 175px;
+}
