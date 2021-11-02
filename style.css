@@ -813,6 +813,7 @@ span {
   text-align: center;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  z-index: 1000000;
 }
 
 #sc1 h1:hover {

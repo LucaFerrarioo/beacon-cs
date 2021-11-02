@@ -654,6 +654,7 @@ span {
   font-weight: normal;
   text-align: center;
   transition: all 0.5s ease;
+  z-index: 1000000;
 }
 
 #sc1 h1:hover {
@@ -675,7 +676,7 @@ span {
   position: relative;
 }
 
-.weird{
+.weird {
   position: absolute;
   right: 10px;
   bottom: -75px;
@@ -683,12 +684,12 @@ span {
   transition: all 0.5s ease;
 }
 
-.weird:hover{
+.weird:hover {
   transform: scale(1.2);
   right: 45px;
 }
 
-.left-abt{
+.left-abt {
   width: 100vw;
   height: 100vh;
   display: grid;
