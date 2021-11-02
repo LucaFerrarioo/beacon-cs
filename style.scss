@@ -497,10 +497,9 @@ span {
   justify-content: center;
 }
 
-
 //###################################################Follow us#########################################
 
-.cursor-follow{
+.cursor-follow {
   position: fixed;
   background: #2eaccc;
   width: 20px;
@@ -513,7 +512,7 @@ span {
   z-index: 10000;
 }
 
-#body-follow{
+#body-follow {
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
@@ -522,13 +521,13 @@ span {
   background: #252525;
 }
 
-.textContent{
+.textContent {
   padding: 0 7.5%;
   text-align: center;
   color: whitesmoke;
 }
 
-.icnlist{
+.icnlist {
   display: flex;
   justify-content: center;
   top: 50%;
@@ -536,13 +535,13 @@ span {
   padding: 0;
 }
 
-.listitem{
+.listitem {
   margin: 15px;
   text-decoration: none;
 }
 
-.lnk{
-  position: relative; 
+.lnk {
+  position: relative;
   display: block;
   width: 60px;
   height: 60px;
@@ -552,11 +551,11 @@ span {
   border-radius: 50%;
   font-size: 30px;
   color: #666;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.lnk::before{
-  content: '';
+.lnk::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -564,23 +563,23 @@ span {
   height: 100%;
   border-radius: 50%;
   background: #ff10ff;
-  transition: .5s;
-  transform: scale(.9);
+  transition: 0.5s;
+  transform: scale(0.9);
   z-index: -1;
 }
 
-.lnk:hover::before{
+.lnk:hover::before {
   transform: scale(1.1);
   box-shadow: 0 0 15px #ff10ff;
 }
 
-.lnk:hover{
+.lnk:hover {
   color: #ff10ff;
   box-shadow: 0 0 5px #ff10ff;
   text-shadow: 0 0 5px #ff10ff;
 }
 
-.maincont{
+.maincont {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -588,13 +587,13 @@ span {
   justify-content: center;
 }
 
-.lefto{
+.lefto {
   position: absolute;
   justify-content: center;
   margin-left: 5%;
 }
 
-#lftwhite{
+#lftwhite {
   font-size: 30px;
   transition: all 0.5s ease;
   color: whitesmoke;
@@ -604,31 +603,26 @@ span {
   transform: scale(1.5);
 }
 
-
 //#####################################ABOUT US##################################
 
-#body-abt{
-  overflow: hidden;
+#body-abt {
   cursor: none;
-  width: 100vw;
-  height: 100vh;
   margin: 0;
   padding: 0;
 }
 
-.cursor-abt{
+.cursor-abt {
   top: 0;
   left: 0;
   height: 20px;
   width: 20px;
   background: purple;
-  border-radius: 100%;
+  border-radius: 50%;
   position: fixed;
   z-index: 10000;
-  will-change: transform;
 }
 
-.follower{
+.follower {
   top: 0;
   left: 0;
   position: fixed;
@@ -636,45 +630,48 @@ span {
   height: 100px;
   background: #f085f0;
   border-radius: 50%;
-  will-change: transform;
   opacity: 0.7;
 }
 
-.head{
-  font-size: 32pt;
-  text-align: center;
-  margin-bottom: -3.5%;
-  margin-top: 2%;
-}
-
-.split{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  justify-content: center;
-  margin: 5%;
-  padding: 2.5%;
-  height: 600px;
-}
-
-.ctx{
+#sc1 {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  padding-left: 10%;
+  align-items: center;
   justify-content: center;
+  position: static;
 }
 
-.ctx p{
-  font-size: 24pt;
+.txt {
+  display: flex;
+  flex-direction: column;
 }
 
-.imgcont{
-  padding: 0 5%;
+#sc1 h1 {
+  font-size: 80pt;
+  font-weight: normal;
+  text-align: center;
+  transition: all 0.5s ease;
 }
 
-.img{
-  background: url(innovazione-trasferimento-800x600.jpg);
-  background-size: cover;
-  border-radius: 15px;
-  width: 100%;
-  height: 100%;
+#sc1 h1:hover {
+  transform: scale(1.2);
+  .abt-hd {
+    color: rgb(155, 0, 155);
+  }
 }
+
+.abt-hd {
+  font-size: 80pt;
+  font-weight: 500;
+  transition: all 1s ease;
+}
+
+#sc2 {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  position: relative;
+}
+

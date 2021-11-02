@@ -680,12 +680,12 @@ span {
   border-radius: 50%;
   font-size: 30px;
   color: #666;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .lnk::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -693,8 +693,8 @@ span {
   height: 100%;
   border-radius: 50%;
   background: #ff10ff;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   z-index: -1;
@@ -750,10 +750,7 @@ span {
 }
 
 #body-abt {
-  overflow: hidden;
   cursor: none;
-  width: 100vw;
-  height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -764,10 +761,9 @@ span {
   height: 20px;
   width: 20px;
   background: purple;
-  border-radius: 100%;
+  border-radius: 50%;
   position: fixed;
   z-index: 10000;
-  will-change: transform;
 }
 
 .follower {
@@ -778,31 +774,12 @@ span {
   height: 100px;
   background: #f085f0;
   border-radius: 50%;
-  will-change: transform;
   opacity: 0.7;
 }
 
-.head {
-  font-size: 32pt;
-  text-align: center;
-  margin-bottom: -3.5%;
-  margin-top: 2%;
-}
-
-.split {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 5%;
-  padding: 2.5%;
-  height: 600px;
-}
-
-.ctx {
+#sc1 {
+  height: 100vh;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -810,25 +787,53 @@ span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: static;
 }
 
-.ctx p {
-  font-size: 24pt;
+.txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.imgcont {
-  padding: 0 5%;
+#sc1 h1 {
+  font-size: 80pt;
+  font-weight: normal;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.img {
-  background: url(innovazione-trasferimento-800x600.jpg);
-  background-size: cover;
-  border-radius: 15px;
-  width: 100%;
-  height: 100%;
+#sc1 h1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#sc1 h1:hover .abt-hd {
+  color: #9b009b;
+}
+
+.abt-hd {
+  font-size: 80pt;
+  font-weight: 500;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#sc2 {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */
