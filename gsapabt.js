@@ -1,4 +1,4 @@
-gsap.set('.follower', {xPercent: -50, yPercent: -50});
+gsap.set('.follower', {xPercent: -42.5, yPercent: -42.5});
 gsap.set('.cursor', {xPercent: -10, yPercent: -10});
 
 var follow = document.querySelector('.follower');

@@ -650,7 +650,7 @@ span {
 }
 
 #sc1 h1 {
-  font-size: 80pt;
+  font-size: 60pt;
   font-weight: normal;
   text-align: center;
   transition: all 0.5s ease;
@@ -665,7 +665,7 @@ span {
 }
 
 .abt-hd {
-  font-size: 80pt;
+  font-size: 60pt;
   font-weight: 500;
   transition: all 1s ease;
 }
@@ -696,4 +696,17 @@ span {
   grid-template-columns: 20% 80%;
   position: absolute;
   padding-left: 175px;
+}
+
+.weird2{
+  position: absolute;
+  left: -50px;
+  bottom: -30%;
+  z-index: 1000;
+  transition: all 0.5s ease;
+}
+
+.weird2:hover{
+  transform: scale(1.2);
+  left: 0px;
 }
