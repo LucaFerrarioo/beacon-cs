@@ -845,12 +845,6 @@ span {
   -webkit-transition: all 1s ease;
 }
 
-#sc2 {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-}
-
 .weird {
   position: absolute;
   right: 10px;
@@ -892,5 +886,116 @@ span {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   left: 0px;
+}
+
+#sc2 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.txt2abt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20%;
+  padding-left: 40%;
+  padding-bottom: 15%;
+  padding-right: 10%;
+}
+
+.hdabt {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  line-height: 50px;
+}
+
+.hdabt:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  margin-left: +50px;
+}
+
+.hdabt:hover .turnpurple {
+  color: #b400b4;
+}
+
+.hdabt:hover .ctxabt {
+  color: #69006d;
+}
+
+.hdabt h1 {
+  font-size: 60pt;
+  font-weight: 400;
+}
+
+.hdabt span {
+  font-size: 60pt;
+  font-weight: 500;
+}
+
+.ctxabt {
+  font-size: 24pt;
+  font-weight: 300;
+  transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+.ctxabt:hover {
+  color: #69006d;
+}
+
+.weirdpg2 {
+  padding: 10%;
+  padding-right: 30%;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weird3-1 {
+  position: absolute;
+  margin-left: 50px;
+  transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+.weird3-1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.weird3-2 {
+  margin-left: -500px;
+  margin-bottom: -150px;
+  z-index: 1;
+  transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+.weird3-2:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=style.css.map */

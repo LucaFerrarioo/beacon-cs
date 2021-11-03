@@ -688,12 +688,6 @@ span {
   -webkit-transition: all 1s ease;
 }
 
-#sc2 {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-}
-
 .weird {
   position: absolute;
   right: 10px;
@@ -731,4 +725,94 @@ span {
 .weird2:hover{
   transform: scale(1.2);
   left: 0px;
+}
+
+#sc2 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.txt2abt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20%;
+  padding-left: 40%;
+  padding-bottom: 15%;
+  padding-right: 10%;
+}
+
+.hdabt{
+  transition: all 0.5s ease;
+  line-height: 50px;
+}
+
+.hdabt:hover{
+  transform: scale(1.1);
+  margin-left: +50px;
+  .turnpurple{
+    color: rgb(180, 0, 180);
+  }
+  .ctxabt{
+    color: #69006d;
+  }
+}
+
+.hdabt h1{
+  font-size: 60pt;
+  font-weight: 400;
+}
+
+.hdabt span{
+  font-size: 60pt;
+  font-weight: 500;
+}
+
+.ctxabt{
+  font-size: 24pt;
+  font-weight: 300;
+  transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+.ctxabt:hover{
+  color: #69006d;
+}
+
+.weirdpg2{
+  padding:10%;
+  padding-right: 30%;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weird3-1{
+  position: absolute;
+  margin-left: 50px;
+  transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+.weird3-1:hover{
+  transform: scale(1.2);
+}
+
+.weird3-2{
+  margin-left: -500px;
+  margin-bottom: -150px;
+  z-index: 1;
+  transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+.weird3-2:hover{
+  transform: scale(1.2);
 }
