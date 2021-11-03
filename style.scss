@@ -403,6 +403,8 @@ span {
 #contImg {
   width: 100%;
   transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
 }
 
 #contImg:hover {
@@ -447,6 +449,8 @@ span {
   font-size: 1.1rem;
   margin-bottom: 22px;
   transition: 0.3s;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   line-height: 35px;
   resize: none;
 }
@@ -470,6 +474,8 @@ span {
   outline: none;
   cursor: pointer;
   transition: 0.3s;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
 }
 
 .btnCont:hover {
@@ -486,6 +492,8 @@ span {
   width: 30px;
   height: 35px;
   transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
 }
 
 .lft:hover {
@@ -553,6 +561,8 @@ span {
   font-size: 30px;
   color: #666;
   transition: 0.5s;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
 }
 
 .lnk::before {
@@ -565,6 +575,8 @@ span {
   border-radius: 50%;
   background: #ff10ff;
   transition: 0.5s;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
   transform: scale(0.9);
   z-index: -1;
 }
@@ -597,6 +609,8 @@ span {
 #lftwhite {
   font-size: 30px;
   transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
   color: whitesmoke;
 }
 
@@ -654,6 +668,8 @@ span {
   font-weight: normal;
   text-align: center;
   transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
   z-index: 1000000;
 }
 
@@ -668,6 +684,8 @@ span {
   font-size: 60pt;
   font-weight: 500;
   transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
 }
 
 #sc2 {
@@ -682,6 +700,8 @@ span {
   bottom: -75px;
   z-index: 1000;
   transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
 }
 
 .weird:hover {
@@ -701,9 +721,11 @@ span {
 .weird2{
   position: absolute;
   left: -50px;
-  bottom: -30%;
+  bottom: -35%;
   z-index: 1000;
   transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
 }
 
 .weird2:hover{
