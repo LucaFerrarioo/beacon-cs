@@ -25,5 +25,4 @@ function thirdPage() {
     link.forEach(b => b.addEventListener('mousemove', animateItem));
     link.forEach(b => b.addEventListener('mouseleave', animateItem));
     window.addEventListener('mousemove', editCursor);
-
 }
