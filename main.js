@@ -37,7 +37,7 @@ const sr = ScrollReveal({
     // reset: true
 })
 
-sr.reveal('#reveal');
+sr.reveal('.reveal');
 
 const srd = ScrollReveal({
     origin: 'top',

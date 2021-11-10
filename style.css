@@ -141,6 +141,7 @@ html {
   bottom: 0;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
+  z-index: 10000;
 }
 
 .down-white img {
@@ -864,12 +865,18 @@ span {
 .left-abt {
   width: 100vw;
   height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 20% 80%;
-      grid-template-columns: 20% 80%;
   position: absolute;
   padding-left: 175px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .weird2 {
@@ -924,7 +931,6 @@ span {
 .hdabt:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  margin-left: +50px;
 }
 
 .hdabt:hover .turnpurple {
