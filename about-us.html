@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
 
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
-    <script src="gsapabt.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <link
       rel="shortcut icon"
@@ -24,6 +21,10 @@
       rel="stylesheet"
     />
 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- FA -->
     <link
       rel="stylesheet"
@@ -33,12 +34,12 @@
     />
 
     <title>Beacontech | About Us</title>
-  </head>
-  <body id="body-abt">
+</head>
+<body id="body-abt" class="sr">
     <div class="cursor-abt"></div>
     <div class="follower"></div>
 
-    <div id="sc1">
+    <div id="sc1" class="reveal">
       <div class="txt">
         <h1>
           A new ecosystem for <br /><span class="abt-hd">Elegance</span> and
@@ -92,18 +93,18 @@
         /></a>
       </div>
     </div>
-    <div id="sc3">
+    <div id="sc3"></div>
 
-    </div>
-
+    <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="gsapabt.js"></script>
 
     <!-- SCROLLREVEAL -->
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
+    <!-- MAIN -->
     <script src="main.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-  </body>
+    
+</body>
 </html>

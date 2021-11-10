@@ -37,4 +37,4 @@ const sr = ScrollReveal({
     // reset: true
 })
 
-sr.reveal('#body-abt')
+ScrollReveal().reveal('.reveal');
