@@ -37,4 +37,14 @@ const sr = ScrollReveal({
     // reset: true
 })
 
-ScrollReveal().reveal('.reveal');
+sr.reveal('#reveal');
+
+const srd = ScrollReveal({
+    origin: 'top',
+    distance: '100px',
+    duration: 2500,
+    delay: 200,
+    reset: true,
+})
+
+srd.reveal('#delayed');
