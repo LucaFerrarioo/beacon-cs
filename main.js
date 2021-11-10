@@ -26,3 +26,15 @@ function thirdPage() {
     link.forEach(b => b.addEventListener('mouseleave', animateItem));
     window.addEventListener('mousemove', editCursor);
 }
+
+//scrollReveal
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true
+})
+
+sr.reveal('#body-abt')
