@@ -41,9 +41,9 @@ sr.reveal('.reveal');
 
 const srd = ScrollReveal({
     origin: 'top',
-    distance: '100px',
+    distance: '60px',
     duration: 2500,
-    delay: 200,
+    delay: 400,
     reset: true,
 })
 
