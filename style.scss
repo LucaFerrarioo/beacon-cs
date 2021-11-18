@@ -1,11 +1,11 @@
-* {
+body {
   font-family: "Montserrat", sans-serif;
 }
 
-// @font-face {
-//   font-family:"NeutralFace";
-//   src: url("NeutralFace.otf") format("truetype");
-// }
+@font-face {
+  font-family:"NeutralFace";
+  src: url("NeutralFace.otf") format("truetype");
+}
 
 body {
   margin: 0;
@@ -358,7 +358,7 @@ span {
 
 .cursor-cont {
   position: fixed;
-  background: #2eaccc;
+  background: purple;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -372,84 +372,41 @@ span {
 #contact-body {
   height: 100vh;
   width: 100%;
+  font-family:"NeutralFace";
+  letter-spacing: 2.5px
 }
 
 .contact-box {
   border-radius: 20px;
   max-width: 100vw;
   height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
   text-align: center;
   background-color: #fff;
-  padding: 20px 100px 30px 100px;
-}
-
-.left {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 20% 80%;
-  align-items: center;
-  justify-content: center;
-}
-
-#logocont {
-  height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 850px;
 }
 
-#contImg {
-  width: 100%;
-  transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-}
-
-#contImg:hover {
-  transform: scale(1.2);
-}
-
-.right {
-  padding: 25px 30px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: -75px;
+#contact-form{
+  width: 60%;
 }
 
 #h2cont {
   position: relative;
   padding: 0 0 10px;
   margin-bottom: 50px;
-}
-
-#h2cont:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -10px;
-  transform: translateX(-50%);
-  height: 4px;
-  width: 50px;
-  border-radius: 2px;
-  background-color: #2eaccc;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2.5%;
+  font-size: 28pt;
 }
 
 .field {
-  border-radius: 7.5px;
-  width: 75%;
-  border: 2px solid rgba(0, 0, 0, 0);
-  text-align: center;
-  background: rgb(250, 250, 250);
+  width: 100%;
+  border: 2px solid black;
   outline: none;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
@@ -459,6 +416,7 @@ span {
   -webkit-transition: all 0.3s ease;
   line-height: 35px;
   resize: none;
+  font-family: 'NeutralFace';
 }
 
 .field:hover {
@@ -467,30 +425,41 @@ span {
 
 #txtArea {
   min-height: 150px;
+  font-family: 'NeutralFace';
 }
 
-.btnCont {
-  border-radius: 10px;
-  width: 79%;
-  padding: 0.5rem 1rem;
-  background-color: #2eaccc;
-  color: #fff;
+.btn-cont-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;  
+  transition: 0.3s;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.btnCont{
+  width: 200px;
+  padding: 15px 0 15px 0;
   font-size: 1.1rem;
   border: none;
   outline: none;
   cursor: pointer;
-  transition: 0.3s;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
+  background-color: #252525;
+  color: whitesmoke;
+  font-family: 'NeutralFace';
 }
 
 .btnCont:hover {
-  background-color: #19687c;
+  background-color: #252525;
   cursor: none;
 }
 
 .field:focus {
-  border: 2px solid rgba(30, 85, 250, 0.47);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5); 
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
   background-color: #fff;
 }
 
@@ -500,6 +469,7 @@ span {
   transition: all 0.5s ease;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
+  z-index: 1;
 }
 
 .lft:hover {
@@ -510,6 +480,41 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: absolute;
+  height: 100vh;
+  margin-left: 100px;
+}
+
+.data{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-end;
+}
+
+.data .field{
+  right: 0;
+  width: 90%;
+  align-self: center;
+  justify-self: flex-end;
+}
+
+data::after{
+  width: 100%;
+  height: 5px;
+  background-color: black;
+}
+
+.mailcontent{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mailcontent .field{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 95%;
+  align-self: flex-end;
+  justify-self: flex-end;
 }
 
 //###################################################Follow us#########################################
@@ -823,3 +828,4 @@ span {
 .weird3-2:hover{
   transform: scale(1.2);
 }
+
