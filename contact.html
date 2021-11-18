@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="style.css" />
     <script src="main.js"></script>
-  
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <link
@@ -29,51 +29,48 @@
   <body id="contact-body">
     <div class="cursor-cont"></div>
 
-      <div class="contact-box">
-        
-          
-          <form
-            action="https://formspree.io/f/xknkdoog"
-            method="POST"
-            id="contact-form"
-          >
-          <h2 id="h2cont">Contact Us</h2>
-            <div class="data">
-              <input type="text" class="field" name="name" placeholder="Name" />
-            <input
-              type="email"
-              class="field"
-              name="_replyto"
-              placeholder="Email"
-            />
-            </div>
-            
-            <div class="mailcontent">
-              <input
-              type="text"
-              class="field"
-              name="subject"
-              placeholder="Subject"
-            />
-            <textarea
-              placeholder="Message"
-              class="field"
-              name="message"
-              id="txtArea"
-            ></textarea>
+    <div class="contact-box">
+      <form
+        action="https://formspree.io/f/xknkdoog"
+        method="POST"
+        id="contact-form"
+      >
+        <input type="hidden" name="_language" value="en" />
+        <h2 id="h2cont">Contact Us</h2>
+        <div class="data">
+          <input type="text" class="field" name="name" placeholder="Name" />
+          <input
+            type="email"
+            class="field"
+            name="_replyto"
+            placeholder="Email"
+          />
+        </div>
 
-            <div class="btn-cont-container">
-              <button class="btnCont">Submit</button>
-            </div>
-            </div>
-            
-            
-          </form>
-      </div>
+        <div class="mailcontent">
+          <input
+            type="text"
+            class="field"
+            name="subject"
+            placeholder="Subject"
+          />
+          <textarea
+            placeholder="Message"
+            class="field"
+            name="message"
+            id="txtArea"
+          ></textarea>
 
-      <a href="https://beacontech.ga" class="acont">
-        <img src="imgs/chevron-left-solid.svg" alt="" class="lft">
-      </a>
+          <div class="btn-cont-container">
+            <button class="btnCont">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <a href="https://beacontech.ga" class="acont">
+      <img src="imgs/chevron-left-solid.svg" alt="" class="lft" />
+    </a>
 
     <script src="typed.js"></script>
     <script src="gsap.js"></script>
